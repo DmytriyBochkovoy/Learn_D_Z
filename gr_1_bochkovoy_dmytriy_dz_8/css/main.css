@@ -34,10 +34,21 @@ textarea {
     font-size: 14px;
 }
 .fs_own-1 {
+    font-size: 64px;
+}
+.fs_own-2 {
     font-size: 36px;
+}
+.fs_own-6 {
+    font-size: 17px;
 }
 .main {
     width: 100%;
+}
+.preparation {
+    background-image: url('../img/design_bg-1.png'), url('../img/design_bg-1.png'), url('../img/design_bg-2.png');
+    background-repeat: no-repeat;
+    background-position: 5% 100%, 90% 10%, 93% 65%;
 }
 .preparation_item {
     position: relative;
@@ -49,4 +60,14 @@ textarea {
     width: 26px;
     top: 50%;
     left: 0;
+}
+.bg_color-1 {
+    background-color: #7746D7;
+}
+.our_goals_list {
+    background-color: #ffffff57;
+}
+.our_goals_list > div:nth-child(1), 
+.our_goals_list > div:nth-child(2) {
+    border-bottom: 2px solid #7746D7;
 }
