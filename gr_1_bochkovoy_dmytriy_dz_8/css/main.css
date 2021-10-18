@@ -64,10 +64,36 @@ textarea {
 .bg_color-1 {
     background-color: #7746D7;
 }
+.our_goals {
+    background-image: url('../img/design_bg-3.png');
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+}
 .our_goals_list {
     background-color: #ffffff57;
+    max-width: 460px;
 }
 .our_goals_list > div:nth-child(1), 
 .our_goals_list > div:nth-child(2) {
     border-bottom: 2px solid #7746D7;
+}
+.our_goals_text {
+    max-width: 398px;
+}
+
+@media (max-width: 576px) {
+    .preparation, .our_goals {
+        background-image: none;
+    }
+    .fs_own-1 {
+        font-size: 50px;
+    }
+    .fs_own-2 {
+        font-size: 28px;
+    }
+}
+@media (max-width: 1100px) {
+    .preparation, .our_goals {
+        background-image: none;
+    }
 }
