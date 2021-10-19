@@ -39,6 +39,12 @@ textarea {
 .fs_own-2 {
     font-size: 36px;
 }
+.fs_own-3 {
+    font-size: 30px;
+}
+.fs_own-5 {
+    font-size: 21px;
+}
 .fs_own-6 {
     font-size: 17px;
 }
@@ -61,8 +67,17 @@ textarea {
     top: 50%;
     left: 0;
 }
+.text_color-1 {
+    color: #7746D7;
+}
 .bg_color-1 {
     background-color: #7746D7;
+}
+.bg_color-2 {
+    background-color: #ffffff88;
+}
+.border_color {
+    border-bottom: 2px solid #7746D7;
 }
 .our_goals {
     background-image: url('../img/design_bg-3.png');
@@ -80,6 +95,59 @@ textarea {
 .our_goals_text {
     max-width: 398px;
 }
+.course_author {
+    background-image: url('../img/design_bg-6.png'), url('../img/design_bg-9.png'), url('../img/design_bg-4.png'), url('../img/design_bg-5.png');
+    background-color: #e5e5e53d;
+    background-repeat: no-repeat;
+    background-position: 85% 45%, right 100%, 5% 40%, 95% 5%;
+}
+.course_program_list span {
+    position: relative;
+}
+.course_item {
+    max-width: 576px;
+}
+.course_program_list span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    width: 15px;
+    border: 1px solid #7746D7;
+}
+.familiarization {
+    background-image: url('../img/design_bg-2.png'), url('../img/design_bg-1.png'), url('../img/design_bg-4.png');
+    background-repeat: no-repeat;
+    background-color: #e5e5e53d;
+    background-position: 93% 20%, 90% 5%, 5% 90%;
+}
+.training {
+    background-image: url('../img/design_bg-10.png');
+    background-repeat: no-repeat;
+    background-color: #e5e5e53d;
+    background-position: left top;
+}
+.training_item {
+    position: relative;
+    width: 45px;
+    height: 45px;
+}
+.training_item::before {
+    content: '';
+    position: absolute;
+    top: 110%;
+    border: 1px solid #7746D7;
+    height: 17px;
+}
+.form_application {
+    max-width: 755px;
+}
+.application {
+    background-color: #E7D2F4;
+}
+.documents_box {
+    background-color: #7746D7;
+}
 
 @media (max-width: 576px) {
     .preparation, .our_goals {
@@ -93,7 +161,7 @@ textarea {
     }
 }
 @media (max-width: 1100px) {
-    .preparation, .our_goals {
+    .preparation, .our_goals, .course_author {
         background-image: none;
     }
 }
