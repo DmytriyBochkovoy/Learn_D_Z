@@ -1,5 +1,11 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
 * {
     box-sizing: border-box;
+    margin: 0;
+    font-family: Roboto;
 }
 a {
     text-decoration: none;
@@ -17,7 +23,6 @@ textarea {
     outline: none;
     resize: none;
 }
-
 .wrapper {
     max-width: 1920px;
     margin: 0 auto;
@@ -25,52 +30,232 @@ textarea {
 .header {
     width: 100%;
     margin: 0 auto;
-}
-.contacts {
-    width: 100%;
-    background-color: #333333;
-}
-.fs-7 {
-    font-size: 14px;
-}
-.fs_own-1 {
-    font-size: 64px;
-}
-.fs_own-2 {
-    font-size: 36px;
-}
-.fs_own-3 {
-    font-size: 30px;
-}
-.fs_own-5 {
-    font-size: 21px;
-}
-.fs_own-6 {
-    font-size: 17px;
+    position: relative;
 }
 .main {
     width: 100%;
 }
-.text_color-1 {
-    color: #7746D7;
-}
-.bg_color-1 {
-    background-color: #7746D7;
-}
-.bg_color-2 {
-    background-color: #ffffff88;
+.banner {
+    width: 100%;
+    background-image: url('../img/bg_gradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.contacts {
+    width: 100%;
+}
+.bg_contacts {
+    background-color: #265785;
+}
+.contacts_item {
+    padding: 15px 0;
+}
+.contacts_tile {
+    margin: 0 20px;
+}
+.contacts_text {
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+}
+.nav_link {
+    padding: 0 15px;
+}
+.login_button {
+    border: 1px solid #CCEAFF;
+    padding: 10px 50px;
+    margin-right: 25px;
+}
+.login_button a {
+    color: #265785;
+}
+.registration_button {
+    border-bottom: 1px dashed #EF7C1E;
+}
+.registration_button a {
+    color: #EF7C1E;
+}
+/* .navbar_collapse {
+   
+} */
+.nav_item {
+    margin-right: 15px;
+    padding: 26px 5px;
+}
+.active {
+    background-color: #EFEDEE;
+    padding: 26px 5px;
+    box-shadow: 0px 2px 0px #EF7C1E;
+}
+.nav_item:hover {
+    background-color: #EFEDEE;
+    box-shadow: 0px 2px 0px #EF7C1E;
+}
+.logo {
+    max-width: 290px;
+    max-height: 260px;
+    position: absolute;
+    top: 0;
+    left: 12%;
+}
+.banner {
+    margin: 26px 0;
+    padding: 45px 0;
+}
+.banner_item {
+    max-width: 1028px;
+    border-left: 2px solid rgb(255, 255, 255);
+}
+.slider_project {
+    padding: 50px;
+}
+.slider_item {
+    max-width: 400px;
+    margin: 0 10px;
+}
+.slider_img {
+    margin-bottom: 15px;
+}
 
 .img_style {
     display: block;
-    width: 100%;
 }
 .container {
     padding: 0 15px;
+    margin: 0 auto;
+}
+.slider_title {
+    margin: 25px 0 60px 0;
+}
+.slider_title span {
+    position: relative;
+}
+.slider_title span::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 25%;
+    width: 50%;
+    border-bottom: 5px solid #1D97C2;
+}
+.bg-slider_project {
+    background-image: url('../img/bg_design-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-slider_news {
+    background-image: url('../img/bg_design-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide_news {
+    background-color: rgb(255, 255, 255);
+}
+.news_item {
+    padding: 0 15px;
+    color: #1B2E4D;
+}
+.news_item > div:first-child {
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+.arrows_details {
+    padding-left: 10px;
+}
+.news_tile {
+    padding-bottom: 15px;
+}
+.news_item {
+    position: relative;
+}
+.news_item > div:last-child {
+    position: absolute;
+    padding: 10px 30px;
+    top: -54px;
+    background-color: #265785;
+}
+.slider_item_news:hover {
+    cursor: pointer;
 }
 
-
+.color_gray {
+    color: #707070;
+}
+.color_black {
+    color: rgb(0, 0, 0);
+}
+.color_white {
+    color: rgb(255, 255, 255);
+}
+.fs_own-1 {
+    font-size: 48px;
+}
+.fs_own-2 {
+    font-size: 44px;
+}
+.fs_own-3 {
+    font-size: 24px;
+}
+.fs_own-4 {
+    font-size: 21px;
+}
+.fs_own-5 {
+    font-size: 18px;
+}
+.fs_own-6 {
+    font-size: 16px;
+}
+.fs_own-7 {
+    font-size: 14px;
+}
+.fs_own-8 {
+    font-size: 12px;
+}
+.text-center {
+    text-align: center;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.w-100 {
+    width: 100%;
+}
+.d-none {
+    display: none;
+}
+.d-inline {
+    display: inline;
+}
+.d-block {
+    display: block;
+}
+.d-flex {
+    display: flex;
+}
+.flex-colmn {
+    flex-direction: column;
+}
+.align-items-start {
+    align-items: start;
+}
+.justify-content-start {
+    justify-content: start;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-items-end {
+    align-items: flex-end;
+}
+.justify-content-end {
+    justify-content: end;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
 
 @media (max-width: 576px) {
     .container {

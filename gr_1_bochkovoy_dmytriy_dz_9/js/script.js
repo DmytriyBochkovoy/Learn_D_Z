@@ -1,33 +1,27 @@
-$('.slider-for').slick({
-    centerPadding: '60px',
+$('.slider_project').slick({
+    dots: true,
     slidesToShow: 3,
-    prevArrow: "<img src='img/arrow_left.svg' class='slick-prev' alt='1'>",
-    nextArrow: "<img src='img/arrow_right.svg' class='slick-next' alt='2'>",
+    prevArrow: false,
+    nextArrow: false,
     responsive: [
         {
+            dots: true,
             breakpoint: 992,
             settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
             slidesToShow: 2
             }
         },
         {
+            dots: true,
             breakpoint: 768,
             settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
             slidesToShow: 1
         }
         },
         {
+            dots: true,
             breakpoint: 320,
             settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
             slidesToShow: 1
         }
       }
