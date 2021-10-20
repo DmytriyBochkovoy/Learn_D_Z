@@ -166,6 +166,11 @@ textarea {
 .enrollment_course {
     background-color: #FFDE00;
 }
+.slide_bg {
+    background-image: url('../img/design_bg-11.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .footer {
     background-image: url('../img/footer_bg-1.png');
@@ -190,7 +195,7 @@ textarea {
         height: 200px;
     }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1700px) {
     .preparation, 
     .our_goals, 
     .course_author, 

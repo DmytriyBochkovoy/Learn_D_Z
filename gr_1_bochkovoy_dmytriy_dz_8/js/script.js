@@ -23,7 +23,7 @@ $('.slider-for').slick({
         }
         },
         {
-            breakpoint: 480,
+            breakpoint: 320,
             settings: {
             arrows: false,
             centerMode: true,
