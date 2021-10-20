@@ -95,6 +95,12 @@ textarea {
 .our_goals_text {
     max-width: 398px;
 }
+.course_photo {
+    max-width: 458px;
+}
+.course_img {
+    max-width: 340px;
+}
 .course_author {
     background-image: url('../img/design_bg-6.png'), url('../img/design_bg-9.png'), url('../img/design_bg-4.png'), url('../img/design_bg-5.png');
     background-color: #e5e5e53d;
@@ -127,6 +133,9 @@ textarea {
     background-color: #e5e5e53d;
     background-position: left top;
 }
+.training_img {
+    max-width: 656px;
+}
 .training_item {
     position: relative;
     width: 45px;
@@ -148,20 +157,45 @@ textarea {
 .documents_box {
     background-color: #7746D7;
 }
+.video_container {
+    height: 645px;
+}
+.rounded_own-circle {
+    border-radius: 50%;
+}
+.enrollment_course {
+    background-color: #FFDE00;
+}
+
+.footer {
+    background-image: url('../img/footer_bg-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 @media (max-width: 576px) {
     .preparation, .our_goals {
         background-image: none;
     }
     .fs_own-1 {
-        font-size: 50px;
+        font-size: 32px;
     }
     .fs_own-2 {
         font-size: 28px;
     }
+    .course_program_list span::before {
+        border: none;
+    }
+    .video_container {
+        height: 200px;
+    }
 }
 @media (max-width: 1100px) {
-    .preparation, .our_goals, .course_author {
+    .preparation, 
+    .our_goals, 
+    .course_author, 
+    .training,
+    .familiarization {
         background-image: none;
     }
 }
