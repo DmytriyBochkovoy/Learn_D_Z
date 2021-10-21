@@ -70,11 +70,20 @@ textarea {
 .text_color-1 {
     color: #7746D7;
 }
+.text_color-2 {
+    color: #333333;
+}
 .bg_color-1 {
     background-color: #7746D7;
 }
 .bg_color-2 {
     background-color: #ffffff88;
+}
+.bg_color-3 {
+    background-image: url('../img/bg_form-1.png'), url('../img/bg_form-2.png');
+    background-repeat: no-repeat;
+    background-position: left 50%, right bottom;
+    background-color: #52484818;
 }
 .border_color {
     border-bottom: 2px solid #7746D7;
@@ -157,6 +166,11 @@ textarea {
 .documents_box {
     background-color: #7746D7;
 }
+.questions_block {
+    background-image: url('../img/design_bg-12.png'), url('../img/design_bg-1.png'), url('../img/design_bg-4.png');
+    background-repeat: no-repeat;
+    background-position: 4% bottom, 2% 80%, 96% 20%;
+}
 .video_container {
     height: 645px;
 }
@@ -166,16 +180,30 @@ textarea {
 .enrollment_course {
     background-color: #FFDE00;
 }
-.slide_bg {
-    background-image: url('../img/design_bg-11.png');
+.slider_reviews {
+    background-image: url('../img/design_bg-13.png'), url('../img/design_bg-14.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: left top, right bottom;
 }
-
+.slide_bg {
+    position: relative;
+}
+.slide_item {
+    position: absolute;
+    bottom: -10%;
+    left: 15%;
+}
 .footer {
-    background-image: url('../img/footer_bg-1.png');
+    background-image: url('../img/bg_footer.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: bottom ;
+    background-size: 100% 60%;
+}
+.form_block {
+    margin: 0 auto;
+}
+.accordion-button:focus {
+    border-color: none !important;
 }
 
 @media (max-width: 576px) {
@@ -195,12 +223,19 @@ textarea {
         height: 200px;
     }
 }
+@media (max-width: 990px) {
+    .bg_color-3 {
+        background-image: none;
+    }
+}
 @media (max-width: 1700px) {
     .preparation, 
     .our_goals, 
     .course_author, 
     .training,
-    .familiarization {
+    .familiarization,
+    .slider_reviews,
+    .questions_block {
         background-image: none;
     }
 }
