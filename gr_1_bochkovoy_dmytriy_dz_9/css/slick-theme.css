@@ -165,7 +165,7 @@
     border: 1px solid #265785;
     border-radius: 50%;
     outline: none;
-    background: transparent;
+    background: rgb(255, 255, 255);
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
