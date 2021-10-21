@@ -56,3 +56,8 @@ $('.sliders_activity').slick({
       }
     ]
 });
+$(document).ready(function() {
+    $ ('.br_menu').click(function(){
+        $ ('.br_menu, .navbar_nav'). toggleClass('active_collapse');
+    });
+});
